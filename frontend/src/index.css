@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6366f1, #14b8a6);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 24px;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35);
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.input {
+  background: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 12px 14px;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #6366f1;
+}
+
+.input option {
+  color: black;
+}
+
+.btn,
+.btn-ai {
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  background: #14b8a6;
+  color: #001;
+}
+
+.btn-ai {
+  background: #6366f1;
+  color: white;
+}
+
+.board {
+  background: rgba(2, 6, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 18px;
+  min-height: 400px;
+}
+
+.task-card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.badge {
+  font-size: 11px;
+  background: rgba(99, 102, 241, 0.2);
+  color: #c7d2fe;
+  padding: 4px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.small-btn {
+  font-size: 11px;
+  background: #1e293b;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.small-btn-danger {
+  font-size: 11px;
+  background: #7f1d1d;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
