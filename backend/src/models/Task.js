@@ -57,6 +57,20 @@ const taskSchema = new mongoose.Schema(
       ref: "User"
     },
 
+    /* NEW - Task Owner */
+    owner: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User"
+    },
+
+    /* NEW - Shared Users */
+    sharedWith: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+      }
+    ],
+
     workspace: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Workspace"
